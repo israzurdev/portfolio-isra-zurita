@@ -1,35 +1,38 @@
 import React, { useState } from "react";
 
 const CategoryIcons = {
-  "Web Development": (
+  "Full Stack Development": (
+    // Icono: Navegador Web con código (Representa Web/Full Stack)
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M21 3C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3H21ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"></path>
+      <path d="M3 3H21C21.5523 3 22 3.44772 22 4V20C22 20.5523 21.5523 21 21 21H3C2.44772 21 2 20.5523 2 20V4C2 3.44772 2.44772 3 3 3ZM20 11H4V19H20V11ZM20 5H4V9H20V5ZM11 6V8H9V6H11ZM7 6V8H5V6H7Z"></path>
     </svg>
   ),
-  "Mobile Development": (
+  "Cybersecurity & DevOps": (
+    // Icono: Escudo de Seguridad (Representa Ciberseguridad/Protección)
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M7 4V20H17V4H7ZM6 2H18C18.5523 2 19 2.44772 19 3V21C19 21.5523 18.5523 22 18 22H6C5.44772 22 5 21.5523 5 21V3C5 2.44772 5.44772 2 6 2ZM12 17C12.5523 17 13 17.4477 13 18C13 18.5523 12.5523 19 12 19C11.4477 19 11 18.5523 11 18C11 17.4477 11.4477 17 12 17Z"></path>
-    </svg>
+      <path d="M12 2L3 5V11C3 16.55 12 22 12 22C12 22 21 16.55 21 11V5L12 2ZM12 11.99V13H11V11.99H12ZM13 13V15H11V13H13ZM12 16C12 16 12 16 12 16C12 16 12 16 12 16ZM12 6C13.66 6 15 7.34 15 9V11H9V9C9 7.34 10.34 6 12 6Z"></path>
+      <path d="M12 8C11.45 8 11 8.45 11 9V11H13V9C13 8.45 12.55 8 12 8Z" fill="white"></path> </svg>
   ),
-  "UI/UX Design & Prototyping": (
+  "Multiplatform & Mobile": (
+    // Icono: Dispositivos (Monitor + Móvil) (Representa Multiplataforma/DAM)
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
       className="w-6 h-6 text-[var(--sec)] opacity-70"
     >
-      <path d="M5.7646 7.99998L5.46944 7.26944C5.26255 6.75737 5.50995 6.17454 6.02202 5.96765L15.2939 2.22158C15.8059 2.01469 16.3888 2.26209 16.5956 2.77416L22.2147 16.6819C22.4216 17.194 22.1742 17.7768 21.6622 17.9837L12.3903 21.7298C11.8783 21.9367 11.2954 21.6893 11.0885 21.1772L11.0002 20.9586V21H7.00021C6.44792 21 6.00021 20.5523 6.00021 20V19.7303L2.65056 18.377C2.13849 18.1701 1.89109 17.5873 2.09798 17.0752L5.7646 7.99998ZM8.00021 19H10.2089L8.00021 13.5333V19ZM6.00021 12.7558L4.32696 16.8972L6.00021 17.6084V12.7558ZM7.69842 7.44741L12.5683 19.5008L19.9858 16.5039L15.1159 4.45055L7.69842 7.44741ZM10.6766 9.47974C10.1645 9.68663 9.5817 9.43924 9.37481 8.92717C9.16792 8.4151 9.41532 7.83227 9.92739 7.62538C10.4395 7.41849 11.0223 7.66588 11.2292 8.17795C11.4361 8.69002 11.1887 9.27286 10.6766 9.47974Z"></path>
-    </svg>
+      <path d="M4 6H20V16H4V6ZM2 4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V16C22 17.1046 21.1046 18 20 18H15V20H9V18H4C2.89543 18 2 17.1046 2 16V4ZM18 8H16V14H18V8ZM19 19H22V21H19V22H17V19H19V19Z"></path>
+      </svg>
   ),
 };
 
@@ -37,19 +40,20 @@ const SkillsList = () => {
   const [openItem, setOpenItem] = useState<string | null>(null);
 
   const skills = {
-    "Web Development": [
-      "Single Page Applications (SPAs)",
-      "Landing pages and business websites",
-      "Portfolio websites",
+    "Full Stack Development": [
+      "Scalable REST APIs (Spring Boot & FastAPI)",
+      "Modern SPAs with React & TypeScript",
+      "Secure Database Management (SQL)",
     ],
-    "Mobile Development": [
-      "Mobile-friendly web apps",
-      "React Native mobile apps",
+    "Cybersecurity & DevOps": [
+      "Secure Coding & Vulnerability Prevention",
+      "Linux Administration & Scripting (Python)",
+      "Containerization with Docker",
     ],
-    "UI/UX Design & Prototyping": [
-      "UI design with Figma & Canva",
-      "UX research & improvements",
-      "Prototyping for websites & mobile apps",
+      "Multiplatform & Mobile": [
+        "Responsive Web Applications (PWA)",
+        "Java/Android App Development",
+        "Cross-platform Solutions",
     ],
   };
 
