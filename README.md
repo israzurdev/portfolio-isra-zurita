@@ -27,6 +27,7 @@ It highlights my transition from **Systems Administration (ASIR)** to **Full Sta
 │   ├── layouts/     # Main page layouts
 │   └── pages/       # Astro pages
 └── astro.config.mjs # Configuration
+```
 
 📬 Contact
 Israel Zurita - LinkedIn Profile
