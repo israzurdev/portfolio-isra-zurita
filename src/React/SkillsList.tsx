@@ -41,19 +41,19 @@ const SkillsList = () => {
 
   const skills = {
     "Full Stack Development": [
-      "Scalable REST APIs (Spring Boot & FastAPI)",
+      "Robust REST APIs (Django, FastAPI & Spring)", // Añadido Django y priorizado Python
       "Modern SPAs with React & TypeScript",
-      "Secure Database Management (SQL)",
+      "Database Design & ORM Management", // Más profesional que solo "SQL"
     ],
     "Cybersecurity & DevOps": [
-      "Secure Coding & Vulnerability Prevention",
-      "Linux Administration & Scripting (Python)",
+      "Secure by Design & Hardening", // Tu lema principal
+      "Linux SysAdmin & Automation (Python/Bash)",
       "Containerization with Docker",
     ],
-      "Multiplatform & Mobile": [
-        "Responsive Web Applications (PWA)",
-        "Java/Android App Development",
-        "Cross-platform Solutions",
+    "Multiplatform & Mobile": [
+      "Cross-platform Solutions (DAM Background)",
+      "Java & Android Development",
+      "Responsive Web Apps (PWA)",
     ],
   };
 
